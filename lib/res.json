@@ -740,13 +740,104 @@
                 ]
             },
             "loot": {
-                "location": {
-                    "first_line": 35,
-                    "first_column": 12,
-                    "last_line": 35,
-                    "last_column": 12
+              "name": "loot",
+              "cycleMarkers": [
+                {
+                  "type": "option",
+                  "value": [
+                    "give",
+                    "insert",
+                    "replace",
+                    "spawn"
+                  ],
+                  "change": {
+                    "give":[
+                      {
+                        "type": "entity",
+                        "value": "target"
+                      }
+                    ],
+                    "insert":[
+                      {
+                        "type": "coord",
+                        "value": "x y z"
+                      }
+                    ],
+                    "spawn":[
+                      {
+                        "type": "coord",
+                        "value": "x y z"
+                      }
+                    ],
+                    "replace": [
+                      {
+                        "type": "option",
+                        "value": [
+                          "block",
+                          "entity"
+                        ],
+                        "change": {
+                          "entity":[
+                            {
+                              "type": "entity",
+                              "value": "target"
+                            }
+                          ],
+                          "block":[
+                            {
+                              "type": "coord",
+                              "value": "x y z"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type": "inventory-slot",
+                        "value": "slot"
+                      }
+                    ]
+                  }
                 },
-                "code": "name: 'loot'\ncycleMarkers: [\n\t{\n\t\ttype: 'option'\n\t\tvalue: [\n\t\t\t'give'\n\t\t\t'insert'\n\t\t\t'replace'\n\t\t\t'spawn'\n\t\t]\n\t\tchange:\n\t\t\tgive:[\n\t\t\t\t{\n\t\t\t\ttype: 'entity'\n\t\t\t\tvalue: 'target'\n\t\t\t\t}\n\t\t\t]\n\t\t\tinsert:[\n\t\t\t\t{\n\t\t\t\t\ttype: 'coord'\n\t\t\t\t\tvalue: 'x y z'\n\t\t\t\t}\n\t\t\t]\n\t\t\tspawn:[\n\t\t\t\t{\n\t\t\t\t\ttype: 'coord'\n\t\t\t\t\tvalue: 'x y z'\n\t\t\t\t}\n\t\t\t]\n\t\t\treplace:[\n\t\t\t\ttype: 'option'\n\t\t\t\tvalue: [\n\t\t\t\t\t'block'\n\t\t\t\t\t'entity'\n\t\t\t\t]\n\t\t\t\tentity:[\n\t\t\t\t{\n\t\t\t\t\ttype: 'entity'\n\t\t\t\t\tvalue: 'target'\n\t\t\t\t}\n\t\t\t\t]\n\t\t\t\tblock:[\n\t\t\t\t\t{\n\t\t\t\t\t\ttype: 'coord'\n\t\t\t\t\t\tvalue: 'x y z'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t\t{\n\t\t\t\t\ttype: 'inventory-slot'\n\t\t\t\t\tvalue: 'slot'\n\t\t\t\t}\n\t\t\t]\n\n\t}\n\t{\n\t\ttype: 'option'\n\t\tvalue: [\n\t\t\t'fish'\n\t\t\t'kill'\n\t\t\t'loot'\n\t\t\t'mine'\n\t\t]\n\t\tchange:\n\t\t\tfish:[\n\t\t\t\t{\n\t\t\t\t\ttype: 'string'\n\t\t\t\t\tvalue: 'block loot'\n\t\t\t\t}\n\t\t\t]\n\t\t\tloot:[\n\t\t\t\t{\n\t\t\t\t\ttype: 'string'\n\t\t\t\t\tvalue: 'block loot'\n\t\t\t\t}\n\t\t\t]\n\t\t\tkill:[\n\t\t\t\t{\n\t\t\t\t\ttype: 'entity'\n\t\t\t\t\tvalue: 'target'\n\t\t\t\t}\n\t\t\t]\n\t\t\tmine:[\n\t\t\t\t{\n\t\t\t\t\ttype: 'coord'\n\t\t\t\t\tvalue: 'x y z'\n\t\t\t\t}\n\t\t\t\t{\n\t\t\t\t\ttype: 'string'\n\t\t\t\t\tvalue: 'tool'\n\t\t\t\t}\n\t\t\t]\n\t}\n]\n"
+                {
+                  "type": "option",
+                  "value": [
+                    "fish",
+                    "kill",
+                    "loot",
+                    "mine"
+                  ],
+                  "change": {
+                    "fish":[
+                      {
+                        "type": "string",
+                        "value": "block loot"
+                      }
+                    ],
+                    "loot":[
+                      {
+                        "type": "string",
+                        "value": "block loot"
+                      }
+                    ],
+                    "kill":[
+                      {
+                        "type": "entity",
+                        "value": "target"
+                      }
+                    ],
+                    "mine":[
+                      {
+                        "type": "coord",
+                        "value": "x y z"
+                      },
+                      {
+                        "type": "string",
+                        "value": "tool"
+                      }
+                    ]
+                  }
+                }
+              ]
             },
             "me": {
                 "name": "me",
