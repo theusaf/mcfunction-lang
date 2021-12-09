@@ -1,0 +1,9 @@
+scopeName: "source.mcmeta"
+fileTypes: ["mcmeta"]
+name: "Minecraft Pack Meta JSON"
+
+patterns: [
+  {
+    include: "source.json"
+  }
+]

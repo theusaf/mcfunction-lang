@@ -38,7 +38,7 @@ difficulty hard
 effect clear @a minecraft:absorbtion
 effect give @s minecraft:conduit_power 10 0 false
 execute align xy rotated as @s in overworld positioned as @s anchored eyes facing entity @s eyes if entity @s if blocks ~ ~ ~ ~ ~ ~ ~ ~ ~ masked offset ~ ~ ~ store success block ~ ~ ~ path double 1 run experience query @s points
-execute positioned ~ ~ ~ rotated ~ ~
+execute positioned ~ ~ ~ rotated ~ ~ run give @p diamond
 experience add @s 1 points
 fill ~ ~ ~ ~ ~ ~ minecraft:gold_block replace minecraft:nether_gold_ore
 function name
@@ -77,7 +77,7 @@ team modify team prefix {}
 tell @s hi
 tellraw @s {}
 time add 100
-title @s times 1 2 1
+title @s[foo=0..,nbt={so:true, foo:{"bar":1b}},scores={hoo=0..},yes=ok] times 1 2 1
 title @s subtitle ""
 trigger objective set 1
 teammsg message
@@ -88,3 +88,7 @@ worldborder get
 worldborder damage amount 0.5
 worldborder warning distance 50
 worldborder set 29000000 0
+setblock ~ ~ ~ diamond_block[state=1,foo=north]
+give @p diamond{nbtData:true}
+setblock ~ ~ ~ chest[facing=north]{nbt:"yes"}
+setblock ~ ~ ~ minecraft:chest[facing=north]{nbt:"yes"}

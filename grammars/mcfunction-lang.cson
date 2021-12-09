@@ -1,0 +1,46 @@
+scopeName: "source.mcfunction-lang"
+fileTypes: ["mcfunction"]
+name: "Minecraft Function"
+type: "tree-sitter"
+parser: "tree-sitter-mcfunction-lang"
+
+scopes:
+  "root": "source.mcfunction-lang"
+  "comment": "comment"
+  "invalid_comment": "error.comment"
+  "command": [{
+    match: "^/"
+    scopes: "error.slash"
+  }, "definition.command"]
+  "command_name": "definition.command.keyword.name"
+  '''
+  number,
+  nbt_number,
+  selector_number,
+  boolean
+  ''': "definition.datavalue"
+  "selector": "definition.selector"
+  "selector_key": "definition.key.selector_key"
+  "selector_value": "definition.value.selector_value"
+  "coordinate": "definition.datavalue.coordinate"
+  "string": "definition.string"
+  "container": "definition.namespaced.container"
+  "path": "definition.namespaced.path"
+  "nbt_path": "definition.nbt_path"
+  "item": "definition.namespaced.item"
+  "selector_option_section": "definition.section.selector_option"
+  '''
+  nbt_object,
+  nbt_array,
+  selector_object,
+  selector_nbt,
+  selector_score
+  ''': "definition.section.object"
+  "selector_score_key": "definition.key.selector_score"
+  "nbt_object_key": "definition.key.nbt"
+  "execute_keyword": "keyword.execute"
+  "state_key": "definition.key.state"
+  "state_value": "definition.value.state"
+
+comments:
+  start: "# "

@@ -1,0 +1,74 @@
+@import 'ui-variables';
+
+.syntax--mcfunction-lang {
+
+  .syntax--comment {
+  	color: @text-color-subtle;
+  	font-style: italic;
+  }
+
+  .syntax--command {
+    color: @text-color;
+  }
+
+  .syntax--command.syntax--keyword.syntax--name {
+    color: #a632a8;
+  }
+
+  .syntax--datavalue {
+    color: #e69719;
+  }
+
+  .syntax--state.syntax--key {
+    color: #00eaff;
+  }
+  .syntax--state.syntax--value {
+    color: #00ff2f;
+  }
+  .syntax--key.syntax--nbt {
+    color: #ff2ec4;
+  }
+
+  .syntax--selector {
+    color: #1979e6;
+
+    .syntax--key {
+      color: #00eaff;
+    }
+
+    .syntax--key.syntax--selector_score,
+    .syntax--key.syntax--nbt {
+      color: #ff2ec4;
+    }
+
+    .syntax--value {
+      color: #00ff2f;
+    }
+
+    .syntax--section {
+      color: darkgrey;
+    }
+
+  }
+
+  .syntax--string {
+    color: #ffcc00;
+  }
+
+  .syntax--error,
+  .syntax--command + .syntax--comment {
+    color: #ddd;
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 34, 0, 0.8);
+  }
+
+  .syntax--command + .syntax--error {
+    color: @text-color;
+    text-decoration: none;
+  }
+
+  .syntax--keyword {
+    color: #ba46e3;
+  }
+
+}

@@ -1,0 +1,4 @@
+".source.mcmeta":
+  "initialization":
+    "prefix": "init"
+    "body": "{\n\t\"pack\": {\n\t\t\"pack_format\": ${1:8},\n\t\t\"description\": \"${2:My Data Pack}\"\n\t}\n}"
