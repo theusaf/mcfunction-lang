@@ -8,6 +8,7 @@ Supports 1.12 - 1.18.2
 - This package may require Python to build certain dependencies.
   - Make sure that Python is installed and is available on your `PATH`.
     - If you open a command prompt and type in `python` or `python3` and it works, Python is probably installed.
+    - See https://github.com/nodejs/node-gyp#on-windows
 
 ## Features:
 
