@@ -1,8 +1,8 @@
-# mcfunction-lang syntax highlighter
+# mcfunction-lang
 
-A syntax highlighter and snippet package for Minecraft's function files
+A syntax highlighter and autocomplete package for Minecraft's function files
 
-Supports 1.12 - 1.18.2
+Supports 1.12 - **1.18.2**
 
 ## Installation Requirements
 - This package may require Python to build certain dependencies.
@@ -11,23 +11,30 @@ Supports 1.12 - 1.18.2
     - See https://github.com/nodejs/node-gyp#on-windows
 
 ## Features:
-
-- Items, Sounds, Enchantments, Biomes, Particles, Loot Tables, Objectives, Recipes, Effects, Entities, Blocks, Advancements, and Structures are kept up to date with the latest Minecraft snapshots.
-- Improved Syntax highlighting
+- Syntax highlighting for `mcfunction` and `mcmeta` files
 - Autocomplete for commands, selectors, and more
 - Options to disable "minecraft:" in autocompletion.
 - Version switching (from 1.12 - 1.18.2)!
+- Updated data for:
+  - Advancements
+  - Biomes
+  - Blocks
+  - Effects
+  - Enchantments
+  - Entities
+  - Game Rules
+  - Items
+  - Particles
+  - Loot Tables
+  - Recipes
+  - Scoreboard objectives
+  - Sounds
+  - Structures
+  - Tags
 
 ## What's different about this mcfunction highlighter?
 
 This package, forked from [Yurihaia/mcfunction](https://github.com/Bassab03/mcfunction), fixes many of the issues listed in it, adds more commands, items, entities, and has more suggestions, such as loot tables, sounds, and particles!
-
-## Features I am planning to add:
-
-- Suggestions for NBT tags and block states.
-- Custom color picker for color-based nbt tags.
-- Add item, block, and entity tags
-- Reading the file system to get functions
 
 ## Common Issues
 - x command is not working
@@ -39,4 +46,4 @@ This package, forked from [Yurihaia/mcfunction](https://github.com/Bassab03/mcfu
 If you find an issue, no matter how small, please create an issue! There may be many things missing from the data files.
 
 ## Alternative packages:
-- mcfunction-novum (A very good alternative, updated frequently)
+- [mcfunction-novum](https://github.com/jan00bl/mcfunction-novum) (A very good alternative, updated frequently)
