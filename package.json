@@ -1,6 +1,6 @@
 {
   "name": "mcfunction-lang",
-  "version": "1.18.0-build-1.0.0",
+  "version": "1.18.0-build-2.0.0",
   "description": "[1.12 - 1.18.2] - Autocomplete and syntax highlighting for Minecraft functions, actively updated.",
   "repository": {
     "type": "git",
