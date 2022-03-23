@@ -1,19 +1,13 @@
 {
   "name": "mcfunction-lang",
   "version": "1.18.0-build-1.0.0",
-  "description": "Minecraft function language. Has syntax highlighting and autocompletion. Updated, maintained, and improved for 1.16.",
+  "description": "[1.12 - 1.18.2] - Autocomplete and syntax highlighting for Minecraft functions, actively updated.",
   "repository": {
     "type": "git",
     "url": "https://github.com/theusaf/mcfunction.git"
   },
   "keywords": [
     "minecraft",
-    "1.12",
-    "1.13",
-    "1.14",
-    "1.15",
-    "1.16",
-    "1.17",
     "1.18",
     "mcfunction",
     "mcmeta",
@@ -22,7 +16,13 @@
     "minecraft",
     "highlighting",
     "autocomplete",
-    "datapack"
+    "datapack",
+    "1.12",
+    "1.13",
+    "1.14",
+    "1.15",
+    "1.16",
+    "1.17"
   ],
   "main": "./lib/main",
   "license": "MIT",
@@ -41,6 +41,7 @@
     "tree-sitter-mcfunction-lang": "^1.1.2"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "eslint": "^8.4.1"
   }
 }
