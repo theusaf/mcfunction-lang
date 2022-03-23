@@ -11,3 +11,4 @@ worldborder set 1 0
 worldborder center ~ ~
 worldborder damage buffer 100
 worldborder damage amount 100
+placefeature dark_forest_vegetation ~ ~ ~
