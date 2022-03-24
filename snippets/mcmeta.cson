@@ -1,4 +1,81 @@
 ".source.mcmeta":
-  "initialization":
+  "initialization (latest)":
     "prefix": "init"
-    "body": "{\n\t\"pack\": {\n\t\t\"pack_format\": ${1:8},\n\t\t\"description\": \"${2:My Data Pack}\"\n\t}\n}"
+    "body": """
+      {
+        "pack": {
+          "pack_format": ${1:9},
+          "description": "${2:My Data Pack}"
+        }
+      }
+    """
+  "initialization (1.12)":
+    "prefix": "init12"
+    "body": """
+      {
+        "pack": {
+          "pack_format": ${1:3},
+          "description": "${2:My Data Pack}"
+        }
+      }
+    """
+  "initialization (1.13 - 1.14)":
+    "prefix": "init13"
+    "body": """
+      {
+        "pack": {
+          "pack_format": ${1:4},
+          "description": "${2:My Data Pack}"
+        }
+      }
+    """
+  "initialization (1.15)":
+    "prefix": "init15"
+    "body": """
+      {
+        "pack": {
+          "pack_format": ${1:5},
+          "description": "${2:My Data Pack}"
+        }
+      }
+    """
+  "initialization (1.16)":
+    "prefix": "init16"
+    "body": """
+      {
+        "pack": {
+          "pack_format": ${1:6},
+          "description": "${2:My Data Pack}"
+        }
+      }
+    """
+  "initialization (1.17)":
+    "prefix": "init17"
+    "body": """
+      {
+        "pack": {
+          "pack_format": ${1:7},
+          "description": "${2:My Data Pack}"
+        }
+      }
+    """
+  "initialization (1.18)":
+    "prefix": "init18"
+    "body": """
+      {
+        "pack": {
+          "pack_format": ${1:8},
+          "description": "${2:My Data Pack}"
+        }
+      }
+    """
+  "initialization (1.18.2)":
+    "prefix": "init182"
+    "body": """
+      {
+        "pack": {
+          "pack_format": ${1:9},
+          "description": "${2:My Data Pack}"
+        }
+      }
+    """
