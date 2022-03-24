@@ -7,11 +7,7 @@ parser: "tree-sitter-mcfunction-lang"
 scopes:
   "root": "source.mcfunction-lang"
   "comment": "comment"
-  "invalid_comment": "error.comment"
-  "command": [{
-    match: "^/"
-    scopes: "error.slash"
-  }, "definition.command"]
+  "bad_command": ["error.slash", "definition.command"]
   "command_name": "definition.command.keyword.name"
   '''
   number,
